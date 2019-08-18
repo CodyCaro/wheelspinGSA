@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -53,6 +54,8 @@ public class Wheel : MonoBehaviour
             {
                 wheelState = WheelState.STILL;
                 reducedSpeed = spinSpeed;
+
+                FindObjectOfType<WheelFlag>().SendScore();
                 FindObjectOfType<WheelFlag>().ResetValues();
             }
         }

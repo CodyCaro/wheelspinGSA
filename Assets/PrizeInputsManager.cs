@@ -11,10 +11,6 @@ public class PrizeInputsManager : MonoBehaviour
         LoadPrizes();
     }
 
-    void Update()
-    {
-
-    }
 
     public void LoadPrizes()
     {

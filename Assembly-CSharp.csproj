@@ -57,6 +57,7 @@
   <ItemGroup>
      <Compile Include="Assets\PrizeInputField.cs" />
      <Compile Include="Assets\PrizeInputsManager.cs" />
+     <Compile Include="Assets\Score.cs" />
      <Compile Include="Assets\SpinButton.cs" />
      <Compile Include="Assets\Wheel.cs" />
      <Compile Include="Assets\WheelFlag.cs" />
