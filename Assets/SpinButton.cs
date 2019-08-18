@@ -18,7 +18,7 @@ public class SpinButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public void OnPointerDown(PointerEventData eventData)
     {
         isBeingHeld = true;
-        wheel.spinTheWheel = true;
+        wheel.wheelState = WheelState.SPIN;
     }
 
     public void OnPointerUp(PointerEventData eventData)
@@ -26,8 +26,7 @@ public class SpinButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         if (wheelFlag.fullCycleMet)
         {
             isBeingHeld = false;
-            wheel.spinTheWheel = false;
-            wheel.reduceSpeed = true;
+            wheel.wheelState = WheelState.SLOW_DOWN;
         }
         else
         {

@@ -354,6 +354,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb7dda90df34c44799b52fbdf9ce2ed9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wheel: {fileID: 0}
+  wheelFlag: {fileID: 0}
   isBeingHeld: 0
 --- !u!1 &87503097 stripped
 GameObject:
@@ -842,8 +844,7 @@ MonoBehaviour:
   spinIncreaseMultiplier: 15
   reducedSpeed: -250
   reductionSpeed: 15
-  spinTheWheel: 0
-  reduceSpeed: 0
+  wheelState: 0
 --- !u!1 &351264537 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3285262645563248353, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
@@ -1230,7 +1231,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: c750b5f4a6fe84074b03aa3da14a89c7, type: 3}
   m_Color: {r: 0, g: 1, b: 0.24022293, a: 1}
   m_FlipX: 0
@@ -1268,6 +1269,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 356b0e747bd69408e892dabdc3006de4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstTickObject: {fileID: 0}
+  fullCycleMet: 0
+  fullCyclesNeeded: 1
+  cycleCounter: 0
 --- !u!1 &473728363 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3285262645563248353, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
@@ -4910,6 +4915,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb7dda90df34c44799b52fbdf9ce2ed9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wheel: {fileID: 0}
+  wheelFlag: {fileID: 0}
   isBeingHeld: 0
 --- !u!1001 &1758757553
 PrefabInstance:

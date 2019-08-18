@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum WheelState
+{
+    STILL,
+    SPIN,
+    SLOW_DOWN
+}
+
 public class Wheel : MonoBehaviour
 {
     public float maxSpinSpeed;
@@ -11,18 +18,17 @@ public class Wheel : MonoBehaviour
     public float reducedSpeed;
     public float reductionSpeed;
 
-    //Enum?
-    public bool spinTheWheel;
-    public bool reduceSpeed;
-
-    void Start()
-    {
-
-    }
+    public WheelState wheelState;
 
     void Update()
     {
-        if (spinTheWheel)
+        SpinTheWheel();
+        SlowDownTheWheel();
+    }
+
+    private void SpinTheWheel()
+    {
+        if (wheelState == WheelState.SPIN)
         {
             if (spinSpeed >= maxSpinSpeed)
             {
@@ -31,8 +37,11 @@ public class Wheel : MonoBehaviour
             transform.Rotate(0, 0, spinSpeed * Time.deltaTime);
             reducedSpeed = spinSpeed;
         }
+    }
 
-        if (reduceSpeed)
+    private void SlowDownTheWheel()
+    {
+        if (wheelState == WheelState.SLOW_DOWN)
         {
             spinSpeed = -1;
             if (reducedSpeed <= 0)
@@ -42,7 +51,7 @@ public class Wheel : MonoBehaviour
             }
             else
             {
-                reduceSpeed = false;
+                wheelState = WheelState.STILL;
                 reducedSpeed = spinSpeed;
                 FindObjectOfType<WheelFlag>().ResetValues();
             }
@@ -52,7 +61,7 @@ public class Wheel : MonoBehaviour
     public void ResetWheel()
     {
         spinSpeed = -1;
-        spinTheWheel = false;
+        wheelState = WheelState.STILL;
     }
 
 }
