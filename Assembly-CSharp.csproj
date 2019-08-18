@@ -55,9 +55,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\PrizeInputField.cs" />
+     <Compile Include="Assets\PrizeInputsManager.cs" />
      <Compile Include="Assets\SpinButton.cs" />
      <Compile Include="Assets\Wheel.cs" />
      <Compile Include="Assets\WheelFlag.cs" />
+     <Compile Include="Assets\WheelSegment.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

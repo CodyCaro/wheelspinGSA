@@ -112,7 +112,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: $9999
+  m_text: $5000
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -214,6 +214,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3285262645563248352}
   - component: {fileID: 3285262645563248359}
+  - component: {fileID: 1599618655}
+  - component: {fileID: 6907316882693239361}
   m_Layer: 0
   m_Name: wheel segment
   m_TagString: Untagged
@@ -228,7 +230,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3285262645563248353}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -284,3 +286,116 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &1599618655
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3285262645563248353}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2.3, y: 8}
+    newSize: {x: 2.3, y: 8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.16, y: 0.45}
+      - {x: 0.26, y: 1.25}
+      - {x: 0.29, y: 1.5}
+      - {x: 0.31, y: 1.66}
+      - {x: 0.32999998, y: 1.81}
+      - {x: 0.38, y: 2.21}
+      - {x: 0.45999998, y: 2.83}
+      - {x: 0.56, y: 3.6299999}
+      - {x: 0.61, y: 4.04}
+      - {x: 0.63, y: 4.2}
+      - {x: 0.65, y: 4.35}
+      - {x: 0.78, y: 5.39}
+      - {x: 0.79999995, y: 5.54}
+      - {x: 0.82, y: 5.7}
+      - {x: 0.88, y: 6.19}
+      - {x: 0.9, y: 6.35}
+      - {x: 0.93, y: 6.5}
+      - {x: 1.01, y: 7.23}
+      - {x: 1.0799999, y: 7.83}
+      - {x: 1.09, y: 7.9199996}
+      - {x: 1.09, y: 7.95}
+      - {x: 1.0699999, y: 7.96}
+      - {x: 0.91999996, y: 7.99}
+      - {x: 0.72999996, y: 8}
+      - {x: -0.55, y: 8}
+      - {x: -0.71, y: 7.98}
+      - {x: -0.76, y: 7.99}
+      - {x: -1.03, y: 7.95}
+      - {x: -1.06, y: 7.9199996}
+      - {x: -1.06, y: 7.81}
+      - {x: -0.98999995, y: 7.31}
+      - {x: -0.96, y: 7.0899997}
+      - {x: -0.94, y: 6.95}
+      - {x: -0.93, y: 6.87}
+      - {x: -0.78, y: 5.77}
+      - {x: -0.78, y: 5.69}
+      - {x: -0.76, y: 5.5499997}
+      - {x: -0.65, y: 4.83}
+      - {x: -0.64, y: 4.75}
+      - {x: -0.61, y: 4.54}
+      - {x: -0.59999996, y: 4.46}
+      - {x: -0.58, y: 4.3199997}
+      - {x: -0.57, y: 4.24}
+      - {x: -0.55, y: 4.1}
+      - {x: -0.53, y: 3.9499998}
+      - {x: -0.51, y: 3.81}
+      - {x: -0.48999998, y: 3.6599998}
+      - {x: -0.45999998, y: 3.4499998}
+      - {x: -0.45, y: 3.37}
+      - {x: -0.42, y: 3.1599998}
+      - {x: -0.41, y: 3.08}
+      - {x: -0.38, y: 2.87}
+      - {x: -0.37, y: 2.79}
+      - {x: -0.34, y: 2.58}
+      - {x: -0.32999998, y: 2.5}
+      - {x: -0.29999998, y: 2.29}
+      - {x: -0.29, y: 2.21}
+      - {x: -0.26, y: 2}
+      - {x: -0.25, y: 1.92}
+      - {x: -0.21, y: 1.64}
+      - {x: -0.19999999, y: 1.56}
+      - {x: -0.17, y: 1.35}
+      - {x: -0.16, y: 1.1899999}
+      - {x: -0.14, y: 1.05}
+      - {x: -0.099999994, y: 0.84}
+      - {x: -0.049999997, y: 0.48999998}
+      - {x: -0.04, y: 0.41}
+      - {x: 0, y: 0.13}
+      - {x: 0.01, y: 0.089999996}
+      - {x: 0.049999997, y: 0.049999997}
+      - {x: 0.08, y: 0.049999997}
+      - {x: 0.099999994, y: 0.06}
+      - {x: 0.13, y: 0.14}
+      - {x: 0.13, y: 0.22}
+--- !u!114 &6907316882693239361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3285262645563248353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prizeAmount: 0
+  prizeText: {fileID: 3285262644205965681}

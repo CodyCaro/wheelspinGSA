@@ -40,8 +40,5 @@ public class WheelFlag : MonoBehaviour
         {
             firstTickObject = other.gameObject;
         }
-
-
-        print(other.gameObject);
     }
 }
