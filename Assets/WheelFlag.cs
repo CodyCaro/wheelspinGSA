@@ -6,6 +6,7 @@ using UnityEngine;
 public class WheelFlag : MonoBehaviour
 {
     public event Action<int> OnHandleScore;
+    public event Action OnHandleStrike;
 
     public GameObject firstTickObject;
     public WheelSegment currentTickObject;
@@ -23,10 +24,16 @@ public class WheelFlag : MonoBehaviour
 
     public void SendScore()
     {
-        if (OnHandleScore != null)
+        if (OnHandleScore != null && currentTickObject.isStrike == false)
         {
             OnHandleScore(currentTickObject.prizeAmount);
+            currentTickObject.TriggerChangeToStrike();
         }
+        else if (OnHandleStrike != null && currentTickObject.isStrike)
+        {
+            OnHandleStrike();
+        }
+
     }
 
     public void ResetValues()

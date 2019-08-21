@@ -25,8 +25,6 @@ public class VelocityMeter : MonoBehaviour
         {
             movingUp = true;
 
-            print("Please move up");
-            // velocityMeter.value -= velocitySpeed * Time.deltaTime;
             moveUp = StartCoroutine(MoveMeterUp());
             if (moveDown != null)
                 StopCoroutine(moveDown);
@@ -34,17 +32,14 @@ public class VelocityMeter : MonoBehaviour
         else if (velocityMeter.value <= -250f)
         {
             movingUp = false;
-            print("Please move down");
             moveDown = StartCoroutine(MoveMeterDown());
             StopCoroutine(moveUp);
-            // StartCoroutine(MoveMeterDown());
         }
     }
 
     IEnumerator MoveMeterUp()
     {
         yield return new WaitForSecondsRealtime(.001f);
-        print(velocityMeter.value + " move up");
         velocityMeter.value += -velocitySpeed;
 
         if (velocityMeter.value >= -250 && movingUp)
@@ -57,7 +52,6 @@ public class VelocityMeter : MonoBehaviour
     IEnumerator MoveMeterDown()
     {
         yield return new WaitForSecondsRealtime(.001f);
-        print(velocityMeter.value + " move down");
         velocityMeter.value += velocitySpeed;
 
         if (velocityMeter.value <= -1 && movingUp == false)
@@ -65,5 +59,10 @@ public class VelocityMeter : MonoBehaviour
             StartCoroutine(MoveMeterDown());
         }
 
+    }
+
+    public float GetCurrentVelocity()
+    {
+        return velocityMeter.value;
     }
 }

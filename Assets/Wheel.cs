@@ -23,8 +23,11 @@ public class Wheel : MonoBehaviour
 
     void Update()
     {
-        SpinTheWheel();
-        SlowDownTheWheel();
+        if (FindObjectOfType<StrikeController>().struckOut == false)
+        {
+            SpinTheWheel();
+            SlowDownTheWheel();
+        }
     }
 
     private void SpinTheWheel()
@@ -44,6 +47,7 @@ public class Wheel : MonoBehaviour
     {
         if (wheelState == WheelState.SLOW_DOWN)
         {
+            print("Slowing down");
             spinSpeed = -1;
             if (reducedSpeed <= 0)
             {
@@ -60,6 +64,7 @@ public class Wheel : MonoBehaviour
             }
         }
     }
+
 
     public void ResetWheel()
     {
