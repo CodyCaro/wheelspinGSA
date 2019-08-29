@@ -923,6 +923,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154736266}
   m_CullTransparentMesh: 0
+--- !u!114 &165857093 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6907316882693239361, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 766387536}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &191435575
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1256,7 +1268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prizeInputsManager: {fileID: 0}
   inputField: {fileID: 0}
-  wheelSegment: {fileID: 0}
+  wheelSegment: {fileID: 1414147824}
   savedPrizeAmount: 0
   fieldNumber: 3
 --- !u!1 &214085142
@@ -1910,6 +1922,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 246734505}
   m_CullTransparentMesh: 0
+--- !u!114 &257506078 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6907316882693239361, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1774551778}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &258445930
 GameObject:
   m_ObjectHideFlags: 0
@@ -1941,6 +1965,18 @@ Transform:
   m_Father: {fileID: 269559405}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 329.999}
+--- !u!114 &268773914 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6907316882693239361, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 978807969}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &269559404
 GameObject:
   m_ObjectHideFlags: 0
@@ -2607,7 +2643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prizeInputsManager: {fileID: 0}
   inputField: {fileID: 0}
-  wheelSegment: {fileID: 0}
+  wheelSegment: {fileID: 860791108}
   savedPrizeAmount: 0
   fieldNumber: 1
 --- !u!1 &354408856
@@ -3020,6 +3056,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364464091}
   m_CullTransparentMesh: 0
+--- !u!114 &370076189 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6907316882693239361, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2127503035}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &380927498 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6907316882693239361, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2093589307}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &397666963
 GameObject:
   m_ObjectHideFlags: 0
@@ -3479,6 +3539,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 416128675}
   m_CullTransparentMesh: 0
+--- !u!114 &426594373 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6907316882693239361, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2094110509}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &431832783
 GameObject:
   m_ObjectHideFlags: 0
@@ -4554,7 +4626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prizeInputsManager: {fileID: 0}
   inputField: {fileID: 0}
-  wheelSegment: {fileID: 0}
+  wheelSegment: {fileID: 678459433}
   savedPrizeAmount: 0
   fieldNumber: 2
 --- !u!1 &503435549
@@ -4856,7 +4928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prizeInputsManager: {fileID: 0}
   inputField: {fileID: 0}
-  wheelSegment: {fileID: 0}
+  wheelSegment: {fileID: 1727452656}
   savedPrizeAmount: 0
   fieldNumber: 19
 --- !u!1 &512164698
@@ -5203,7 +5275,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &522649962
 Transform:
   m_ObjectHideFlags: 0
@@ -5325,9 +5397,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1872421388}
   m_Direction: 3
   m_MinValue: -250
-  m_MaxValue: -1
+  m_MaxValue: -100
   m_WholeNumbers: 0
-  m_Value: -1
+  m_Value: -100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6406,7 +6478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prizeInputsManager: {fileID: 0}
   inputField: {fileID: 0}
-  wheelSegment: {fileID: 0}
+  wheelSegment: {fileID: 1217629759}
   savedPrizeAmount: 0
   fieldNumber: 8
 --- !u!1 &643746836
@@ -6739,7 +6811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prizeInputsManager: {fileID: 0}
   inputField: {fileID: 0}
-  wheelSegment: {fileID: 0}
+  wheelSegment: {fileID: 1450792032}
   savedPrizeAmount: 0
   fieldNumber: 9
 --- !u!1 &664469167
@@ -6875,6 +6947,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 522649963}
   toggle: {fileID: 0}
+--- !u!114 &669030027 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6907316882693239361, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 191435575}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &669286581
 GameObject:
   m_ObjectHideFlags: 0
@@ -7032,6 +7116,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669286581}
   m_CullTransparentMesh: 0
+--- !u!114 &678459433 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6907316882693239361, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1094722674}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &701537633 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6907316882693239361, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1776514441}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &712435367
 GameObject:
   m_ObjectHideFlags: 0
@@ -7549,7 +7657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prizeInputsManager: {fileID: 0}
   inputField: {fileID: 0}
-  wheelSegment: {fileID: 0}
+  wheelSegment: {fileID: 774794713}
   savedPrizeAmount: 0
   fieldNumber: 22
 --- !u!1 &730295380
@@ -7916,6 +8024,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prizes: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+--- !u!114 &774794713 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6907316882693239361, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1638342874}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &779127582
 GameObject:
   m_ObjectHideFlags: 0
@@ -8119,7 +8239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prizeInputsManager: {fileID: 0}
   inputField: {fileID: 0}
-  wheelSegment: {fileID: 0}
+  wheelSegment: {fileID: 426594373}
   savedPrizeAmount: 0
   fieldNumber: 23
 --- !u!1 &781309185
@@ -8539,7 +8659,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prizeInputsManager: {fileID: 0}
   inputField: {fileID: 0}
-  wheelSegment: {fileID: 0}
+  wheelSegment: {fileID: 1186175261}
   savedPrizeAmount: 0
   fieldNumber: 21
 --- !u!1 &812894139
@@ -9498,7 +9618,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prizeInputsManager: {fileID: 0}
   inputField: {fileID: 0}
-  wheelSegment: {fileID: 0}
+  wheelSegment: {fileID: 1170484390}
   savedPrizeAmount: 0
   fieldNumber: 14
 --- !u!1 &837552063
@@ -9794,6 +9914,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &860791108 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6907316882693239361, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 539136979}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &868806009
 GameObject:
   m_ObjectHideFlags: 0
@@ -10508,7 +10640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prizeInputsManager: {fileID: 0}
   inputField: {fileID: 0}
-  wheelSegment: {fileID: 0}
+  wheelSegment: {fileID: 165857093}
   savedPrizeAmount: 0
   fieldNumber: 13
 --- !u!1 &911274830
@@ -10953,7 +11085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prizeInputsManager: {fileID: 0}
   inputField: {fileID: 0}
-  wheelSegment: {fileID: 0}
+  wheelSegment: {fileID: 268773914}
   savedPrizeAmount: 0
   fieldNumber: 6
 --- !u!1 &961400292
@@ -11887,7 +12019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prizeInputsManager: {fileID: 0}
   inputField: {fileID: 0}
-  wheelSegment: {fileID: 0}
+  wheelSegment: {fileID: 701537633}
   savedPrizeAmount: 0
   fieldNumber: 7
 --- !u!1 &1022571656
@@ -12193,7 +12325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prizeInputsManager: {fileID: 0}
   inputField: {fileID: 0}
-  wheelSegment: {fileID: 0}
+  wheelSegment: {fileID: 1596652240}
   savedPrizeAmount: 0
   fieldNumber: 4
 --- !u!1 &1071262483
@@ -13187,6 +13319,42 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1170484390 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6907316882693239361, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1082361551}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1180414559 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6907316882693239361, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1946708623}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1186175261 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6907316882693239361, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1544941552}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1192418264
 GameObject:
   m_ObjectHideFlags: 0
@@ -13501,6 +13669,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1194110178}
   m_CullTransparentMesh: 0
+--- !u!114 &1207196673 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6907316882693239361, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1747854498}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1210958494
 GameObject:
   m_ObjectHideFlags: 0
@@ -13861,9 +14041,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prizeInputsManager: {fileID: 0}
   inputField: {fileID: 0}
-  wheelSegment: {fileID: 0}
+  wheelSegment: {fileID: 2006743902}
   savedPrizeAmount: 0
   fieldNumber: 18
+--- !u!114 &1217629759 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6907316882693239361, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1428318048}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1242360138
 GameObject:
   m_ObjectHideFlags: 0
@@ -14349,7 +14541,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -15352,7 +15544,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prizeInputsManager: {fileID: 0}
   inputField: {fileID: 0}
-  wheelSegment: {fileID: 0}
+  wheelSegment: {fileID: 1207196673}
   savedPrizeAmount: 0
   fieldNumber: 15
 --- !u!1 &1381349979
@@ -15699,6 +15891,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1407038869}
   m_CullTransparentMesh: 0
+--- !u!114 &1414147824 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6907316882693239361, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1511825182}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1421122077
 GameObject:
   m_ObjectHideFlags: 0
@@ -16336,6 +16540,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443973584}
   m_CullTransparentMesh: 0
+--- !u!114 &1450792032 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6907316882693239361, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2007885276}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1511825182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16952,7 +17168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prizeInputsManager: {fileID: 0}
   inputField: {fileID: 0}
-  wheelSegment: {fileID: 0}
+  wheelSegment: {fileID: 2051505177}
   savedPrizeAmount: 0
   fieldNumber: 12
 --- !u!1 &1564034587
@@ -17274,7 +17490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prizeInputsManager: {fileID: 0}
   inputField: {fileID: 0}
-  wheelSegment: {fileID: 0}
+  wheelSegment: {fileID: 380927498}
   savedPrizeAmount: 0
   fieldNumber: 11
 --- !u!1 &1592497026
@@ -17343,6 +17559,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1596652240 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6907316882693239361, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1126239095}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1599483036
 GameObject:
   m_ObjectHideFlags: 0
@@ -17797,7 +18025,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prizeInputsManager: {fileID: 0}
   inputField: {fileID: 0}
-  wheelSegment: {fileID: 0}
+  wheelSegment: {fileID: 370076189}
   savedPrizeAmount: 0
   fieldNumber: 5
 --- !u!1 &1614481593
@@ -18879,7 +19107,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1706479150
 Transform:
   m_ObjectHideFlags: 0
@@ -19017,6 +19245,18 @@ MonoBehaviour:
   wheel: {fileID: 0}
   wheelFlag: {fileID: 0}
   isBeingHeld: 0
+--- !u!114 &1727452656 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6907316882693239361, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1568377567}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1728686764
 GameObject:
   m_ObjectHideFlags: 0
@@ -20200,7 +20440,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -20529,9 +20769,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prizeInputsManager: {fileID: 0}
   inputField: {fileID: 0}
-  wheelSegment: {fileID: 0}
+  wheelSegment: {fileID: 1897469860}
   savedPrizeAmount: 0
   fieldNumber: 10
+--- !u!114 &1897469860 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6907316882693239361, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1791466023}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1925619728
 GameObject:
   m_ObjectHideFlags: 0
@@ -20735,7 +20987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prizeInputsManager: {fileID: 0}
   inputField: {fileID: 0}
-  wheelSegment: {fileID: 0}
+  wheelSegment: {fileID: 1180414559}
   savedPrizeAmount: 0
   fieldNumber: 17
 --- !u!1 &1925679412
@@ -21496,7 +21748,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prizeInputsManager: {fileID: 0}
   inputField: {fileID: 0}
-  wheelSegment: {fileID: 0}
+  wheelSegment: {fileID: 257506078}
   savedPrizeAmount: 0
   fieldNumber: 20
 --- !u!1 &1970477837
@@ -21726,6 +21978,18 @@ CircleCollider2D:
   m_Offset: {x: 0.00000011920929, y: 0}
   serializedVersion: 2
   m_Radius: 0.04
+--- !u!114 &2006743902 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6907316882693239361, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1336471173}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2006798506
 GameObject:
   m_ObjectHideFlags: 0
@@ -22186,9 +22450,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prizeInputsManager: {fileID: 0}
   inputField: {fileID: 0}
-  wheelSegment: {fileID: 0}
+  wheelSegment: {fileID: 669030027}
   savedPrizeAmount: 0
   fieldNumber: 16
+--- !u!114 &2051505177 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6907316882693239361, guid: 3029f8f6eb17d4a69ae2b9d3d413dc6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1947980298}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36097e1368342c1bc292e5f8dc109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2083357110
 GameObject:
   m_ObjectHideFlags: 0

@@ -24,7 +24,7 @@ public class VelocityMeter : MonoBehaviour
     {
         if (canMove)
         {
-            if (velocityMeter.value >= -1f)
+            if (velocityMeter.value >= -100f)
             {
                 movingUp = true;
 
@@ -63,7 +63,7 @@ public class VelocityMeter : MonoBehaviour
         yield return new WaitForSecondsRealtime(.001f);
         velocityMeter.value += velocitySpeed;
 
-        if (velocityMeter.value <= -1 && movingUp == false)
+        if (velocityMeter.value <= -100 && movingUp == false)
         {
             StartCoroutine(MoveMeterDown());
         }
