@@ -8,11 +8,14 @@ public class WheelSegment : MonoBehaviour
     public int prizeAmount;
     public TextMeshPro prizeText;
 
+    private RectTransform rectTransform;
+
     public bool isStrike;
 
     void Start()
     {
         prizeText = GetComponentInChildren<TextMeshPro>();
+        rectTransform = GetComponentInChildren<RectTransform>();
     }
 
 
@@ -32,6 +35,7 @@ public class WheelSegment : MonoBehaviour
         yield return new WaitForSeconds(.5f);
         isStrike = true;
         prizeText.text = "X";
+        rectTransform.rotation = Quaternion.Euler(0, 0, 0);
         prizeText.fontSize = 45.5f;
         prizeText.color = Color.red;
     }

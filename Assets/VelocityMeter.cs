@@ -12,6 +12,7 @@ public class VelocityMeter : MonoBehaviour
     Coroutine moveUp;
     Coroutine moveDown;
 
+    public bool canMove = true;
     public bool movingUp;
 
     private void Start()
@@ -21,19 +22,27 @@ public class VelocityMeter : MonoBehaviour
 
     private void Update()
     {
-        if (velocityMeter.value >= -1f)
+        if (canMove)
         {
-            movingUp = true;
+            if (velocityMeter.value >= -1f)
+            {
+                movingUp = true;
 
-            moveUp = StartCoroutine(MoveMeterUp());
-            if (moveDown != null)
-                StopCoroutine(moveDown);
+                moveUp = StartCoroutine(MoveMeterUp());
+                if (moveDown != null)
+                    StopCoroutine(moveDown);
+            }
+            else if (velocityMeter.value <= -250f)
+            {
+                movingUp = false;
+                moveDown = StartCoroutine(MoveMeterDown());
+                StopCoroutine(moveUp);
+            }
         }
-        else if (velocityMeter.value <= -250f)
+        else
         {
-            movingUp = false;
-            moveDown = StartCoroutine(MoveMeterDown());
-            StopCoroutine(moveUp);
+            print("Stopping");
+            StopAllCoroutines();
         }
     }
 
@@ -57,6 +66,23 @@ public class VelocityMeter : MonoBehaviour
         if (velocityMeter.value <= -1 && movingUp == false)
         {
             StartCoroutine(MoveMeterDown());
+        }
+
+    }
+
+    public void RestartVelocityMeter()
+    {
+        canMove = true;
+        if (movingUp == true)
+        {
+            moveUp = StartCoroutine(MoveMeterUp());
+            if (moveDown != null)
+                StopCoroutine(moveDown);
+        }
+        else if (movingUp == false)
+        {
+            moveDown = StartCoroutine(MoveMeterDown());
+            StopCoroutine(moveUp);
         }
 
     }

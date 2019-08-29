@@ -21,7 +21,9 @@ public class Wheel : MonoBehaviour
 
     public WheelState wheelState;
 
-    void Update()
+    public Collider2D[] pegColliders;
+
+    void FixedUpdate()
     {
         if (FindObjectOfType<StrikeController>().struckOut == false)
         {
@@ -34,13 +36,27 @@ public class Wheel : MonoBehaviour
     {
         if (wheelState == WheelState.SPIN)
         {
+            for (int i = 0; i < pegColliders.Length; i++)
+            {
+                pegColliders[i].enabled = true;
+            }
             if (spinSpeed >= maxSpinSpeed)
             {
                 spinSpeed -= Time.deltaTime * spinIncreaseMultiplier;
             }
-            transform.Rotate(0, 0, spinSpeed * Time.deltaTime);
+            transform.Rotate(new Vector3(0, 0, spinSpeed) * Time.deltaTime);
             reducedSpeed = spinSpeed;
         }
+    }
+
+    public void RotateWheelToNextSection()
+    {
+        print("Rotate again");
+        wheelState = WheelState.SPIN;
+        spinSpeed -= 10f;
+        wheelState = WheelState.SLOW_DOWN;
+        // FindObjectOfType<WheelFlag>().SendScore();
+        // transform.Rotate(new Vector3(0, 0, -10f) * Time.deltaTime);
     }
 
     private void SlowDownTheWheel()
@@ -52,7 +68,7 @@ public class Wheel : MonoBehaviour
             if (reducedSpeed <= 0)
             {
                 reducedSpeed += Time.deltaTime * reductionSpeed;
-                transform.Rotate(0, 0, reducedSpeed * Time.deltaTime);
+                transform.Rotate(new Vector3(0, 0, reducedSpeed) * Time.deltaTime);
             }
             else
             {
@@ -61,6 +77,16 @@ public class Wheel : MonoBehaviour
 
                 FindObjectOfType<WheelFlag>().SendScore();
                 FindObjectOfType<WheelFlag>().ResetValues();
+                if (FindObjectOfType<VelocityMeter>() != null)
+                    FindObjectOfType<VelocityMeter>().RestartVelocityMeter();
+            }
+
+            if (reducedSpeed >= -5)
+            {
+                for (int i = 0; i < pegColliders.Length; i++)
+                {
+                    pegColliders[i].enabled = false;
+                }
             }
         }
     }

@@ -13,8 +13,9 @@ public class Score : MonoBehaviour
 
     void Start()
     {
+        wheelFlag = FindObjectOfType<WheelFlag>();
         scoreDisplay = GetComponent<TextMeshProUGUI>();
-        FindObjectOfType<WheelFlag>().OnHandleScore += AddScore;
+        wheelFlag.OnHandleScore += AddScore;
     }
 
     private void AddScore(int prizeAmount)
@@ -22,4 +23,14 @@ public class Score : MonoBehaviour
         totalPrizeAmount += prizeAmount;
         scoreDisplay.text = "$" + totalPrizeAmount.ToString();
     }
+
+    private void OnDestroy()
+    {
+        wheelFlag.OnHandleScore -= AddScore;
+    }
+    private void OnDisable()
+    {
+        wheelFlag.OnHandleScore -= AddScore;
+    }
+
 }

@@ -18,6 +18,7 @@ public class SpinVelocityButton : MonoBehaviour
     public void SpinWheel()
     {
         wheel.spinSpeed = FindObjectOfType<VelocityMeter>().GetCurrentVelocity();
+        FindObjectOfType<VelocityMeter>().canMove = false;
         wheel.wheelState = WheelState.SPIN;
         StartCoroutine(SlowWheel());
     }

@@ -16,14 +16,48 @@ public class WheelFlag : MonoBehaviour
 
     public int fullCyclesNeeded = 1;
     public int cycleCounter;
+    public float bounceUpAmount;
 
-    private void Start()
+    public Transform targetRot;
+
+    public bool hitByPeg;
+
+    private void Update()
     {
+        transform.position = new Vector3(0, 4.65f, 0);
 
+        if (hitByPeg || transform.rotation.z > 0f)
+        {
+            transform.Rotate(0, 0, -5f, Space.Self);
+            if (transform.rotation.z < 0f)
+            {
+                hitByPeg = false;
+            }
+        }
     }
 
     public void SendScore()
     {
+        transform.rotation = Quaternion.Euler(0, 0, 0);
+
+
+        if (currentTickObject == null)
+        {
+            FindObjectOfType<Wheel>().RotateWheelToNextSection();
+        }
+
+        StartCoroutine(WaitToSendScore());
+
+    }
+
+    IEnumerator WaitToSendScore()
+    {
+        yield return new WaitForSeconds(.5f);
+        if (currentTickObject == null)
+        {
+            FindObjectOfType<Wheel>().RotateWheelToNextSection();
+            yield break;
+        }
         if (OnHandleScore != null && currentTickObject.isStrike == false)
         {
             OnHandleScore(currentTickObject.prizeAmount);
@@ -33,12 +67,12 @@ public class WheelFlag : MonoBehaviour
         {
             OnHandleStrike();
         }
-
     }
 
     public void ResetValues()
     {
-        firstTickObject = currentTickObject.gameObject;
+        if (currentTickObject != null)
+            firstTickObject = currentTickObject.gameObject;
         cycleCounter = 0;
         fullCycleMet = false;
         canCountCycle = true;
@@ -65,12 +99,26 @@ public class WheelFlag : MonoBehaviour
             canCountCycle = true;
         }
 
-        currentTickObject = other.gameObject.GetComponent<WheelSegment>();
-
-
         if (firstTickObject == null)
         {
             firstTickObject = other.gameObject;
         }
+
+        if (other.gameObject.tag == "Peg")
+        {
+            transform.Rotate(0, 0, bounceUpAmount, Space.Self);
+            hitByPeg = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        currentTickObject = null;
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        currentTickObject = other.gameObject.GetComponent<WheelSegment>();
+
     }
 }

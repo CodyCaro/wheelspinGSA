@@ -13,12 +13,14 @@ public class SpinButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         wheel = FindObjectOfType<Wheel>();
         wheelFlag = FindObjectOfType<WheelFlag>();
+        wheel.spinSpeed = -100f;
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
         isBeingHeld = true;
         wheel.wheelState = WheelState.SPIN;
+        wheel.spinSpeed = -100f;
     }
 
     public void OnPointerUp(PointerEventData eventData)
