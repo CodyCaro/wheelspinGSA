@@ -17,10 +17,13 @@ public class SpinVelocityButton : MonoBehaviour
 
     public void SpinWheel()
     {
-        wheel.spinSpeed = FindObjectOfType<VelocityMeter>().GetCurrentVelocity();
-        FindObjectOfType<VelocityMeter>().canMove = false;
-        wheel.wheelState = WheelState.SPIN;
-        StartCoroutine(SlowWheel());
+        if (wheel.wheelState == WheelState.STILL)
+        {
+            wheel.spinSpeed = FindObjectOfType<VelocityMeter>().GetCurrentVelocity();
+            FindObjectOfType<VelocityMeter>().canMove = false;
+            wheel.wheelState = WheelState.SPIN;
+            StartCoroutine(SlowWheel());
+        }
     }
 
     IEnumerator SlowWheel()
