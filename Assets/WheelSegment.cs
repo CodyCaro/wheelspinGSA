@@ -5,6 +5,7 @@ using TMPro;
 
 public class WheelSegment : MonoBehaviour
 {
+    private SpriteRenderer spriteRenderer;
     public int prizeAmount;
     public TextMeshPro prizeText;
 
@@ -14,6 +15,7 @@ public class WheelSegment : MonoBehaviour
 
     void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         prizeText = GetComponentInChildren<TextMeshPro>();
         rectTransform = GetComponentInChildren<RectTransform>();
     }
@@ -33,10 +35,13 @@ public class WheelSegment : MonoBehaviour
     IEnumerator ChangeToStrike()
     {
         yield return new WaitForSeconds(.5f);
+        spriteRenderer.color = Color.black;
         isStrike = true;
         prizeText.text = "X";
         rectTransform.rotation = Quaternion.Euler(0, 0, 0);
-        prizeText.fontSize = 45.5f;
+        prizeText.fontSize = 65f;
         prizeText.color = Color.red;
+        FindObjectOfType<SpinVelocityButton>().button.interactable = true;
+
     }
 }

@@ -24,16 +24,7 @@ public class WheelFlag : MonoBehaviour
 
     private void Update()
     {
-        transform.position = new Vector3(0, 4.65f, 0);
 
-        if (hitByPeg || transform.rotation.z > 0f)
-        {
-            transform.Rotate(0, 0, -5f, Space.Self);
-            if (transform.rotation.z < 0f)
-            {
-                hitByPeg = false;
-            }
-        }
     }
 
     public void SendScore()
@@ -102,12 +93,6 @@ public class WheelFlag : MonoBehaviour
         if (firstTickObject == null)
         {
             firstTickObject = other.gameObject;
-        }
-
-        if (other.gameObject.tag == "Peg")
-        {
-            transform.Rotate(0, 0, bounceUpAmount, Space.Self);
-            hitByPeg = true;
         }
     }
 

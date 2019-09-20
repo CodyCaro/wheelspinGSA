@@ -44,7 +44,7 @@ public class Wheel : MonoBehaviour
             {
                 spinSpeed -= Time.deltaTime * spinIncreaseMultiplier;
             }
-            transform.Rotate(new Vector3(0, 0, spinSpeed) * Time.deltaTime);
+            transform.Rotate((transform.forward * spinSpeed));
             reducedSpeed = spinSpeed;
         }
     }
@@ -53,7 +53,7 @@ public class Wheel : MonoBehaviour
     {
         print("Rotate again");
         wheelState = WheelState.SPIN;
-        spinSpeed -= 10f;
+        spinSpeed -= 1f;
         wheelState = WheelState.SLOW_DOWN;
         // FindObjectOfType<WheelFlag>().SendScore();
         // transform.Rotate(new Vector3(0, 0, -10f) * Time.deltaTime);
@@ -68,7 +68,7 @@ public class Wheel : MonoBehaviour
             if (reducedSpeed <= 0)
             {
                 reducedSpeed += Time.deltaTime * reductionSpeed;
-                transform.Rotate(new Vector3(0, 0, reducedSpeed) * Time.deltaTime);
+                transform.Rotate((transform.forward * reducedSpeed));
             }
             else
             {
@@ -83,14 +83,19 @@ public class Wheel : MonoBehaviour
 
             if (reducedSpeed >= -5)
             {
-                for (int i = 0; i < pegColliders.Length; i++)
-                {
-                    pegColliders[i].enabled = false;
-                }
+                StartCoroutine(DisablePegCollision());
             }
         }
     }
 
+    private IEnumerator DisablePegCollision()
+    {
+        yield return new WaitForSeconds(2.5f);
+        for (int i = 0; i < pegColliders.Length; i++)
+        {
+            pegColliders[i].enabled = false;
+        }
+    }
 
     public void ResetWheel()
     {
